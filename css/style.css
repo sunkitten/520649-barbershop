@@ -8,6 +8,7 @@ body {
   line-height: 24px;
   font-weight: bold;
   color: #ffffff;
+  text-transform: uppercase;
 }
 
 .container {
@@ -15,12 +16,34 @@ body {
   margin: 0 auto;
 }
 
+/*Стили кнопок*/
+.button {
+  display: block;
+  width: 140px;
+  height: 43px;
+  background-color: #000000;
+  color: #ffffff;
+  line-height: 43px;
+  text-decoration: none;
+  text-align: center;
+}
+
+.button:hover {
+  background-color: #663d15;
+}
+
+.button:active {
+  background-color: #663d15;
+}
+/*Конец стилей кнопок*/
+
+/*Стили шапки*/
 .main-menu {
   display: flex;
   justify-content: space-between;
   font-size: 16px;
   line-height: 72px;
-  text-transform: uppercase;
+  color: #ffffff;
   padding-right: 2px;
   min-height: 72px;
 }
@@ -78,6 +101,7 @@ body {
   background-position: center;
   opacity: 0.3;
 }
+/*Конец стилей шапки*/
 
 .content {
   background-image: url("../img/background.jpg");
@@ -86,6 +110,87 @@ body {
   background-size: cover;
 }
 
+/*Стили подвала*/
 .page-footer {
   background-color: #242424;
+  padding-top: 58px;
+  padding-bottom: 30px;
 }
+
+.page-footer-container {
+  display: flex;
+  color: #ffffff;
+}
+
+.footer__p {
+  margin: 0;
+}
+
+.footer-contacts {
+  width: 400px;
+}
+
+.footer-social {
+  width: 141px;
+  text-align: center;
+}
+
+.footer-copyright {
+  width: 140px;
+  margin-left: auto;
+  margin-right: 0;
+  text-align: center;
+}
+
+.footer-contacts__map {
+  color: #ffffff;
+}
+
+.footer-social__btn-container {
+  font-size: 0;
+  padding-top: 15px;
+}
+
+.footer-social__btn {
+  display: inline-block;
+  width: 43px;
+  margin-right: 6px;
+}
+
+.footer-social__inst {
+  margin: 0;
+}
+
+.footer-social__btn .img {
+  height: 43px;
+  width: 43px;
+  background-image: url(../img/social.png);
+  background-repeat: no-repeat;
+  background-position: 7px 50%;
+}
+
+.footer-social__fb  .img{
+  background-position: -40px 50%;
+}
+
+.footer-social__inst  .img{
+  background-position: -90px 50%;
+}
+
+.footer-copyright__address {
+  margin-top: 15px;
+}
+
+.footer-social__btn:hover,
+.footer-social__btn:active,
+.footer-copyright__address:hover,
+.footer-copyright__address:active {
+  background-color: #ffffff;
+  color: #000000;
+  font-weight: 800;  
+}
+.footer-social__btn:hover .img,
+.footer-social__btn:active .img{
+  filter: invert(1);
+}
+/*Конец стилей подвала*/
