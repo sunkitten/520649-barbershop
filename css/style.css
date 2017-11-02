@@ -15,9 +15,53 @@ body {
   margin: 0 auto;
 }
 
+.main-menu {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 16px;
+  line-height: 20px;
+  text-transform: uppercase;
+  padding: 0 20px 0 22px;
+  height: 72px;
+}
+
+.main-menu__ul {
+  display: flex;
+  list-style: none;
+  padding: 0;
+}
+
+.main-menu__li {
+  padding-right: 40px;
+}
+
+.main-menu__a {
+  color: #ffffff;
+  text-decoration: none;
+  
+}
+
+.main-menu__exit {
+  position: relative;
+}
+
+.main-menu__exit::before {
+  content: "";
+  position: absolute;
+  top: 4px;
+  left: -30px;
+  height: 14px;
+  width: 14px;
+  background-image: url(../img/login.png);
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
 .content {
   background-image: url("../img/background.jpg");
   background-repeat: no-repeat;
+  background-position: center;
   background-size: cover;
 }
 
