@@ -18,44 +18,65 @@ body {
 .main-menu {
   display: flex;
   justify-content: space-between;
-  align-items: center;
   font-size: 16px;
-  line-height: 20px;
+  line-height: 72px;
   text-transform: uppercase;
-  padding: 0 20px 0 22px;
-  height: 72px;
+  padding-right: 2px;
+  min-height: 72px;
 }
 
 .main-menu__ul {
   display: flex;
+  flex-wrap: wrap;
+  align-content: stretch;
   list-style: none;
+  max-width: 830px;
   padding: 0;
-}
-
-.main-menu__li {
-  padding-right: 40px;
+  margin: 0;
 }
 
 .main-menu__a {
+  display: block;
+  width: auto;
+  padding: 0 20px;
   color: #ffffff;
   text-decoration: none;
-  
 }
 
 .main-menu__exit {
   position: relative;
+  width: 67px;
+  text-align: right;
+}
+
+.main-menu__a:hover {
+  background-color: #242424;
+}
+
+.main-menu__exit:hover::before {
+  opacity: 1;
+}
+
+.main-menu__a:active {
+  background-color: #242424;
+}
+
+.main-menu__exit:active::before {
+  opacity: 1;
 }
 
 .main-menu__exit::before {
   content: "";
   position: absolute;
-  top: 4px;
-  left: -30px;
+  top: 30px;
+  left: 24px;
+  display: block;
   height: 14px;
   width: 14px;
   background-image: url(../img/login.png);
   background-repeat: no-repeat;
   background-position: center;
+  opacity: 0.3;
 }
 
 .content {
