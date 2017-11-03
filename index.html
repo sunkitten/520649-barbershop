@@ -25,28 +25,32 @@
     <main class="content">
       <div class="container">
         <div class="logo">
-          <img class="logo__img" src="img/logo.png">
+          <img class="logo__img" src="img/logo.png" width="371" height="155">
         </div>
         
 <!--        Блок преимуществ-->
         <div class="advantages">
           <article class="advantages-item">
             <h2 class="advantages-item__h2">быстро</h2>
-            <img class="advantages-item__img" src="../img/shape.png">
+            <div class="advantages-item__img"></div>
             <p class="advantages-item__p">
               Мы сделаем свою работу быстро! Два часа пролетят незаметно и вы — счастливый обладатель стильной стрижки-минутки!
             </p>
           </article>
           <article class="advantages-item">
             <h2 class="advantages-item__h2">круто</h2>
-            <img class="advantages-item__img" src="../img/shape.png">
+            <div class="advantages-item__img"></div>
             <p class="advantages-item__p">
-              Забудьте, как вы стриглись раньше. Мы сделаем из вас звезду футбола или кино! Во всяком случае внешне.
+              Забудьте, как вы стриглись раньше.
+            </p>
+            <p class="advantages-item__p">Мы сделаем из вас звезду футбола или кино!
+            </p>
+            <p class="advantages-item__p">Во всяком случае внешне.
             </p>
           </article>
           <article class="advantages-item">
             <h2 class="advantages-item__h2">дорого</h2>
-            <img class="advantages-item__img" src="../img/shape.png">
+            <div class="advantages-item__img"></div>
             <p class="advantages-item__p">
               Наши мастера - профессионалы своего дела и не могут стоить дешево. К тому же, разве цена не дает определенный статус?
             </p>
@@ -56,29 +60,31 @@
 <!--        Блок новости и фото-->
         <article class="block">
 <!--          Блок новостей-->
-          <section class="block-left">
-            <h3 class="block-left__h3">Новости</h3>
+          <section class="block-left block-news">
+            <h3 class="block-left__h3 block__h3">Новости</h3>
             <article class="news">
-              <p class="news__p">
+              <p class="news__p block__p">
                 Нам наконец завезли ягермайстер! Теперь вы можете пропустить стаканчик во время стижки
               </p>
               <time datetime="2017-01-11">11 января</time>
             </article>
             <article class="news">
-              <p class="news__p">
+              <p class="news__p block__p">
                 В нашей команде пополнение, борис "бритва" стригунец, обладатель множества титулов и наград пополнил наши стройные ряды
               </p>
               <time datetime="2017-01-18">18 января</time>
             </article>
-            <a class="block-left-btn button">все новости</a>
+            <a class="news__btn button">все новости</a>
           </section>
           
 <!--          Блок фотогалереи-->
-          <section class="block-right">
-            <h3 class="block-right__h3">Фотогалерея</h3>
-            <a class="block-right__img" href="#"></a>
-            <a class="block-right-btn button">назад</a>
-            <a class="block-right-btn button">вперед</a>
+          <section class="block-right photo">
+            <h3 class="block-right__h3 block__h3">Фотогалерея</h3>
+            <a class="photo__img" href="#"></a>
+            <div class="block-btn">
+              <a class="photo__btn button">назад</a>
+              <a class="photo__btn button">вперед</a>
+            </div>
           </section>
         </article>
 <!--        Конец блока новости и фото-->
@@ -86,26 +92,28 @@
 <!--        Блок контакты и запись-->
         <article class="block">
 <!--          Блок контакты-->
-          <section class="block-left">
-            <h3 class="block-left__h3">Контактная информация</h3>
+          <section class="block-left block-info">
+            <h3 class="block-left__h3 block__h3">Контактная информация</h3>
             <div class="contacts">
-              <p class="contacts__name">барбершоп "бородинский"</p>
-              <p class="contacts__address">адрес: г. Санкт-Петербург, Б. Конюшенная, д. 19/8</p>
-              <p class="contacts__phone">теефон: +7 (495) 666-02-66</p>
+              <p class="contacts__name block__p">барбершоп "бородинский"</p>
+              <p class="contacts__address block__p">адрес: г. Санкт-Петербург, Б. Конюшенная, д. 19/8</p>
+              <p class="contacts__phone block__p">теефон: +7 (495) 666-02-66</p>
             </div>
             <div class="work-time">
-              <p class="work-time__p">время работы:</p>
-              <p class="work-time__p">>пн-пт: с 10:00 до 22:00</p>
-              <p class="work-time__p">>сб-вс: с 10:00 до 19:00</p>
+              <p class="work-time__p block__p">время работы:</p>
+              <p class="work-time__p block__p">>пн-пт: с 10:00 до 22:00</p>
+              <p class="work-time__p block__p">>сб-вс: с 10:00 до 19:00</p>
             </div>
-            <a class="block-left-btn button">как проехать</a>
-            <a class="block-left-btn button">обратная связь</a>
+            <div class="block-btn">
+              <a class="info__btn button">как проехать</a>
+              <a class="info__btn button">обратная связь</a>
+            </div>
           </section>
           
 <!--          Блок запись-->
           <section class="block-right">
-            <h3 class="block-right__h3">Записаться</h3>
-            <p class="block-right__p">укажите желаемую дату и время и мы свяжемся с вами для подтверждения брони</p>
+            <h3 class="block-right__h3 block__h3">Записаться</h3>
+            <p class="block-right__p block_p">укажите желаемую дату и время и мы свяжемся с вами для подтверждения брони</p>
             
 <!--            Форма в блоке записи-->
             <form class="appointment" method="post">

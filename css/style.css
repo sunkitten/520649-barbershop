@@ -7,7 +7,7 @@ body {
   font-size: 14px;
   line-height: 24px;
   font-weight: bold;
-  color: #ffffff;
+  color: #000000;
   text-transform: uppercase;
 }
 
@@ -18,11 +18,12 @@ body {
 
 /*Стили кнопок*/
 .button {
-  display: block;
+  display: inline-block;
   width: 140px;
   height: 43px;
   background-color: #000000;
   color: #ffffff;
+  font-size: 14px;
   line-height: 43px;
   text-decoration: none;
   text-align: center;
@@ -103,12 +104,125 @@ body {
 }
 /*Конец стилей шапки*/
 
+
+/*Стили основного блока*/
 .content {
   background-image: url("../img/background.jpg");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
+  padding-bottom: 28px;
 }
+
+.logo {
+  margin: 0 auto;
+  padding-top: 59px;
+  padding-bottom: 71px;
+  padding-left: 7px;
+  width: 371px;
+  height: 155px;
+}
+
+/*Блок преимуществ*/
+.advantages {
+  display: flex;
+  justify-content: space-between;
+  margin-right: 10px;
+  margin-left: 8px;
+  padding-bottom: 78px;
+}
+
+.advantages-item {
+  width: 283px;
+  text-align: center;
+  color: #ffffff;
+}
+
+.advantages-item__h2 {
+  font-size: 2.14em;
+  line-height: 1.4;
+  margin: 0;
+}
+
+.advantages-item__img {
+  width: 30px;
+  height: 29px;
+  background-image: url(../img/shape.png);
+  background-repeat: no-repeat;
+  margin: 0.5em auto 1.7em;
+}
+
+.advantages-item__p {
+  margin: 0;
+}
+/*Конец блока преимуществ*/
+
+.block {
+  display: flex;
+  justify-content: space-between;
+  background-color: #f9f5f3;
+  margin-bottom: 36px;
+  padding: 45px 80px 49px;
+}
+
+.block-left {
+  width: 370px;
+  position: relative;
+}
+
+.block-right {
+  width: 300px;
+  position: relative;
+}
+
+.block__h3 {
+  font-size: 30px;
+  line-height: 42px;
+  margin: 0;
+  padding-bottom: 10px;
+}
+
+.block__p {
+  margin: 0;
+}
+/*Блок новости и фотогалерея*/
+.news {
+  padding: 11px 0;
+}
+
+.news time {
+  text-transform: none;
+}
+
+.news__btn,
+photo__btn {
+  position: absolute;
+  bottom: 0;
+}
+
+.block-btn {
+  font-size: 0;
+}
+
+.photo__btn:not(:last-of-type),
+.info__btn:not(:last-of-type) {
+  margin-right: 20px;
+}
+
+.photo__img {
+  display: block;
+  box-sizing: border-box;
+  width: 300px;
+  height: 178px;
+  margin-top: 12px;
+  margin-bottom: 38px;
+  border: 8px solid #ffffff;
+  background-color: #e5e5e5;
+  background-image: url(../img/photo.jpg);
+  background-repeat: no-repeat;
+}
+/*Конец блока новостей и фотогалереи*/
+/*Конец стилей основного блока*/
 
 /*Стили подвала*/
 .page-footer {
@@ -152,9 +266,9 @@ body {
 }
 
 .footer-social__btn {
-  display: inline-block;
   width: 43px;
   margin-right: 6px;
+  font-size: 0;
 }
 
 .footer-social__inst {
