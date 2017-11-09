@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <title>HTML Academy: Барбершоп</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css?family=PT+Sans+Narrow" rel="stylesheet">
+  </head>
+  <body>
+    <header class="page-header">
+      <div class="container">
+        <nav class="navigation">
+          <a class="logo" href="index.html">
+            <img class="logo__img" src="img/logo-small.png" width="111" height="24">
+          </a>
+          <ul class="main-menu">
+            <li class="main-menu__item"><a class="main-menu__a" href="#">информация</a></li>
+            <li class="main-menu__item"><a class="main-menu__a" href="#">новости</a></li>
+            <li class="main-menu__item"><a class="main-menu__a" href="#">прайс-лист</a></li>
+            <li class="main-menu__item main-menu__item--active"><a class="main-menu__a" href="#">магазин</a></li>
+            <li class="main-menu__item"><a class="main-menu__a" href="#">контакты</a></li>
+          </ul>
+          <ul class="user-navigation">
+            <li class="main-menu__exit">
+              <a class="main-menu__a" href="#">вход</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <main class="page-content">
+      <h1 class="page-content__title">набор для путешествий «Baxter of California»</h1>
+      <ul class="breadcrumbs">
+        <li class="breadcrumbs__item">
+          <a href="index.html" class="breadcrumbs__link">Главная</a>
+        </li>
+        <li class="breadcrumbs__item">
+          <a href="#" class="breadcrumbs__link">Магазин</a>
+        </li>
+        <li class="breadcrumbs__item">
+          <a href="#" class="breadcrumbs__link">средства для ухода</a>
+        </li>
+        <li class="breadcrumbs__item">
+          набор для путешествий «Baxter of California»
+        </li>
+      </ul>
+      <section class="product">
+        <h2 class="visually-hidden">Страница товара</h2>
+        <div class="product__photo">
+          <img src="img/" alt="photo-product" width="" heught="" class="product__img product__img--big">
+          <img src="img/" alt="photo-product" width="" heught="" class="product__img">
+          <img src="img/" alt="photo-product" width="" heught="" class="product__img">
+          <img src="img/" alt="photo-product" width="" heught="" class="product__img">
+        </div>
+        <div class="product__specification">
+          <p class="product__availability">есть в наличии</p>
+          <p class="product__number">Артикул: dexter-ae</p>
+          <p class="product__text">
+            Travel Kit – необходимый аксессуар во время любого путешествия. В аккуратной кожаной сумке
+            находится все, что нужно для бритья и ухода за кожей во время рабочей поездки или отдыха: средство
+            для умывания, увлажняющий крем, крем для бритья, крем после бритья, шампунь. Набор также
+            может стать отличным подарком.
+          </p>
+          <p class="product__price">300 &#8381;</p>
+          <a href="#" class="button product__link">Купить</a>
+        </div>
+        <div class="product__composition">
+          <p class="product__subtitle">В набор входят:</p>
+          <ul class="product__list">
+            <li class="product_item">Средство для умывания (50 мл)</li>
+            <li class="product_item">Увлажняющий крем (50 мл)</li>
+            <li class="product_item">Крем для бритья (50 мл)</li>
+            <li class="product_item">Крем после бритья, шампунь (50 мл)</li>
+            <li class="product_item">Удобная кожаная косметичка</li>
+          </ul>
+        </section>
+      </section>
+    </main>
+
+    <footer class="page-footer">
+      <div class="container page-footer-container">
+        <p class="footer-contacts">барбершоп "бородинский"<br>
+        адрес: г.санкт-петербург, ул.б.конюшенная, д. 19/8<br>
+        <a class="footer-contacts__map" href="#">как нас найти?</a><br>
+        телефон: +7 (495) 666-02-66</p>
+        <div class="footer-social">
+          <p class="footer-social__text">давайте дружить!</p>
+          <ul class="footer-social__list social-list">
+            <li class="social-list__item">
+              <a class="footer-social__btn footer-social__vk button" href="#">
+                <div class="img"></div>
+                vk
+              </a>
+            </li>
+            <li class="social-list__item">
+              <a class="footer-social__btn footer-social__fb button" href="#">
+                <div class="img"></div>
+                facebook
+              </a>
+            </li>
+            <li class="social-list__item">
+              <a class="footer-social__btn footer-social__inst button" href="#">
+                <div class="img"></div>
+                instagram
+              </a>
+            </li>
+          </ul>
+        </div>
+        <div class="copyright">
+          <p class="copyright__text">разработано:</p>
+          <a class="copyright__btn button" href="#">html academy</a>
+        </div>
+      </div>
+    </footer>
+
+    <section class="popup popup-login">
+      <h2 class="popup__title">Личный кабинет</h2>
+      <p class="popup__text">Введите пожалуйста свой логин и пароль</p>
+      <form class="popup__form" method="get">
+        <input class="popup__input" type="text" placeholder="логин" name="login">
+        <input class="popup__input" type="password" placeholder="password" name="password">
+        <p class="popup__checkbox">
+          <input class="popup__input" type="checkbox" name="remember" id="remember" checked>
+          <label class="popup__name" for="remember">Запомните меня</label>
+        </p>
+        <input class="button popup__btn" type="submit" value="Войти">
+      </form>
+      <a class="popup__link" href="#">Я забыл пароль!</a>
+      <span class="popup__close">X</span>
+    </section>
+
+    <section class="popup popup__map">
+      <img src="#" alt="map" width="" height=" ">
+      <span class="popup__close">X</span>
+    </section>
+  </body>
+</html>

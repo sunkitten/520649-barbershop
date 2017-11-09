@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <title>HTML Academy: Барбершоп</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css?family=PT+Sans+Narrow" rel="stylesheet">
+  </head>
+  <body>
+    <header class="page-header">
+      <div class="container">
+        <nav class="navigation">
+          <a class="logo" href="index.html">
+            <img class="logo__img" src="img/logo-small.png" width="111" height="24">
+          </a>
+          <ul class="main-menu">
+            <li class="main-menu__item"><a class="main-menu__a" href="#">информация</a></li>
+            <li class="main-menu__item"><a class="main-menu__a" href="#">новости</a></li>
+            <li class="main-menu__item"><a class="main-menu__a" href="#">прайс-лист</a></li>
+            <li class="main-menu__item main-menu__item--active"><a class="main-menu__a" href="#">магазин</a></li>
+            <li class="main-menu__item"><a class="main-menu__a" href="#">контакты</a></li>
+          </ul>
+          <ul class="user-navigation">
+            <li class="main-menu__exit">
+              <a class="main-menu__a" href="#">вход</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <main class="page-content">
+      <h1 class="page-content__title">Средства для ухода</h1>
+      <ul class="breadcrumbs">
+        <li class="breadcrumbs__item"><a href="index.html" class="breadcrumbs__link">Главная</a></li>
+        <li class="breadcrumbs__item"><a href="#" class="breadcrumbs__link">Магазин</a></li>
+        <li class="breadcrumbs__item">средства для ухода</li>
+      </ul>
+      <section class="catalog">
+        <h2 class="visually-hidden">Каталог</h2>
+        <form class="catalog__form form" method="post">
+          <h3 class="form__title">Производители:</h3>
+          <div class="form__filter">
+            <input type="checkbox" id="baxter" name="produce" class="form__input input" checked>
+            <input type="checkbox" id="mr" name="produce" class="form__input input">
+            <input type="checkbox" id="suavecito" name="produce" class="form__input input" checked>
+            <input type="checkbox" id="malin" name="produce" class="form__input input">
+            <input type="checkbox" id="murray" name="produce" class="form__input input">
+            <input type="checkbox" id="american" name="produce" class="form__input input" checked>
+            <label for="baxter" class="form__name">Baxter of California</label>
+            <label for="mr" class="form__name">Mr Natty</label>
+            <label for="suavecito" class="form__name">Suavecito</label>
+            <label for="malin" class="form__name">Malin+Goetz</label>
+            <label for="murray" class="form__name">Murray’s</label>
+            <label for="american" class="form__name">American Crew</label>
+          </div>
+          <h3 class="form__title">Группы товаров:</h3>
+          <div class="form__filter">
+            <input type="radio" id="razor" name="product" class="form__input input">
+            <input type="radio" id="care" name="product" class="form__input input" checked>
+            <input type="radio" id="accessories" name="product" class="form__input input">
+            <label for="razor" class="form__name">Бритвенные принадлежности</label>
+            <label for="care" class="form__name">Средства для ухода</label>
+            <label for="accessories" class="form__name">Аксессуары</label>
+          </div>
+          <input class="button form_btn" type="submit" value="Показать">
+        </form>
+        <section class="catalog__page">
+          <h3 class="visually-hidden">страница каталога</h3>
+          <ul class="catalog__cards">
+            <li>
+              <article class="catalog__card card">
+                <img src="img/#" alt="card photo" class="card__img" width="" height="">
+                <div class="card__info">
+                  <h4 class="card__name">
+                    <span class="standart">Набор для путешествий</span>
+                    «Baxter of California»
+                  <h4>
+                  <a href="#" class="button card__link">Купить</a>
+                  <p class="card__price">2 900 &#8381;</p>
+                </div>
+              </article>
+            </li>
+            <li>
+              <article class="catalog__card card">
+                <img src="img/#" alt="card photo" class="card__img" width="" height="">
+                <div class="card__info">
+                  <h4 class="card__name">
+                    <span class="standart">Увлажняющий кондиционер</span>
+                    «Baxter of California»
+                  </h4>
+                  <a href="#" class="button card__link">Купить</a>
+                  <p class="card__price">750 &#8381;</p>
+                </div>
+              </article>
+            </li>
+            <li>
+              <article class="catalog__card card">
+                <img src="img/#" alt="card photo" class="card__img" width="" height="">
+                <div class="card__info">
+                  <h4 class="card__name">
+                    <span class="standart">Гель для волос</span>
+                    «SUAVECITO»
+                  </h4>
+                  <a href="#" class="button card__link">Купить</a>
+                  <p class="card__price">290 &#8381;</p>
+                </div>
+              </article>
+            </li>
+            <li>
+              <article class="catalog__card card">
+                <img src="img/#" alt="card photo" class="card__img" width="" height="">
+                <div class="card__info">
+                  <h4 class="card__name">
+                    <span class="standart">Глина для укладки волос</span>
+                    «American crew»
+                  </h4>
+                  <a href="#" class="button card__link">Купить</a>
+                  <p class="card__price">500 &#8381;</p>
+                </div>
+              </article>
+            </li>
+            <li>
+              <article class="catalog__card card">
+                <img src="img/#" alt="card photo" class="card__img" width="" height="">
+                <div class="card__info">
+                  <h4 class="card__name">
+                    <span class="standart">Гель для волос</span>
+                    «AMERICAN CREW»
+                  </h4>
+                  <a href="#" class="button card__link">Купить</a>
+                  <p class="card__price">300 &#8381;</p>
+                </div>
+              </article>
+            </li>
+            <li>
+              <article class="catalog__card card">
+                <img src="img/#" alt="card photo" class="card__img" width="" height="">
+                <div class="card__info">
+                  <h4 class="card__name">
+                    <span class="standart">Набор для бритья</span>
+                    «Baxter of California»
+                  </h4>
+                  <a href="#" class="button card__link">Купить</a>
+                  <p class="card__price">3 900 &#8381;</p>
+                </div>
+              </article>
+            </li>
+          </ul>
+          <ul class="catalog__pages pages">
+            <li class="pages__item">
+              <a href="#" class="button pages__btn">1</a>
+            </li>
+            <li class="pages__item">
+              <a class="button pages__btn pages__btn--active">2</a>
+            </li>
+            <li class="pages__item">
+              <a href="#" class="button pages__btn">3</a>
+            </li>
+            <li class="pages__item">
+              <a href="#" class="button pages__btn">4</a>
+            </li>
+          </ul>
+        </section>
+      </section>
+    </main>
+
+    <footer class="page-footer">
+      <div class="container page-footer-container">
+        <p class="footer-contacts">барбершоп "бородинский"<br>
+        адрес: г.санкт-петербург, ул.б.конюшенная, д. 19/8<br>
+        <a class="footer-contacts__map" href="#">как нас найти?</a><br>
+        телефон: +7 (495) 666-02-66</p>
+        <div class="footer-social">
+          <p class="footer-social__text">давайте дружить!</p>
+          <ul class="footer-social__list social-list">
+            <li class="social-list__item">
+              <a class="footer-social__btn footer-social__vk button" href="#">
+                <div class="img"></div>
+                vk
+              </a>
+            </li>
+            <li class="social-list__item">
+              <a class="footer-social__btn footer-social__fb button" href="#">
+                <div class="img"></div>
+                facebook
+              </a>
+            </li>
+            <li class="social-list__item">
+              <a class="footer-social__btn footer-social__inst button" href="#">
+                <div class="img"></div>
+                instagram
+              </a>
+            </li>
+          </ul>
+        </div>
+        <div class="copyright">
+          <p class="copyright__text">разработано:</p>
+          <a class="copyright__btn button" href="#">html academy</a>
+        </div>
+      </div>
+    </footer>
+
+    <section class="popup popup-login">
+      <h2 class="popup__title">Личный кабинет</h2>
+      <p class="popup__text">Введите пожалуйста свой логин и пароль</p>
+      <form class="popup__form" method="get">
+        <input class="popup__input" type="text" placeholder="логин" name="login">
+        <input class="popup__input" type="password" placeholder="password" name="password">
+        <p class="popup__checkbox">
+          <input class="popup__input" type="checkbox" name="remember" id="remember" checked>
+          <label class="popup__name" for="remember">Запомните меня</label>
+        </p>
+        <input class="button popup__btn" type="submit" value="Войти">
+      </form>
+      <a class="popup__link" href="#">Я забыл пароль!</a>
+      <span class="popup__close">X</span>
+    </section>
+
+    <section class="popup popup__map">
+      <img src="#" alt="map" width="" height=" ">
+      <span class="popup__close">X</span>
+    </section>
+
+  </body>
+</html>

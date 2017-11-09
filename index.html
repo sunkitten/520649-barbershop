@@ -9,165 +9,198 @@
   <body>
     <header class="page-header">
       <div class="container">
-        <nav class="main-menu">
-          <ul class="main-menu__ul">
-            <li class="main-menu__li"><a class="main-menu__a" href="#">информация</a></li>
-            <li class="main-menu__li"><a class="main-menu__a" href="#">новости</a></li>
-            <li class="main-menu__li"><a class="main-menu__a" href="#">прайс-лист</a></li>
-            <li class="main-menu__li"><a class="main-menu__a" href="#">магазин</a></li>
-            <li class="main-menu__li"><a class="main-menu__a" href="#">контакты</a></li>
+        <nav class="navigation">
+          <ul class="main-menu">
+            <li class="main-menu__item"><a class="main-menu__a" href="#">информация</a></li>
+            <li class="main-menu__item"><a class="main-menu__a" href="#">новости</a></li>
+            <li class="main-menu__item"><a class="main-menu__a" href="#">прайс-лист</a></li>
+            <li class="main-menu__item"><a class="main-menu__a" href="#">магазин</a></li>
+            <li class="main-menu__item"><a class="main-menu__a" href="#">контакты</a></li>
           </ul>
-          <a class="main-menu__exit main-menu__a" href="#">вход</a>
+          <ul class="user-navigation">
+            <li class="main-menu__exit">
+              <a class="main-menu__a" href="#">вход</a>
+            </li>
+          </ul>
         </nav>
       </div>
     </header>
-    
+
     <main class="content">
       <div class="container">
         <div class="logo">
           <img class="logo__img" src="img/logo.png" width="371" height="155">
         </div>
-        
+
 <!--        Блок преимуществ-->
         <div class="advantages">
-          <article class="advantages-item">
-            <h2 class="advantages-item__h2">быстро</h2>
-            <div class="advantages-item__img"></div>
-            <p class="advantages-item__p">
+          <article class="feature">
+            <h2 class="feature__title">быстро</h2>
+            <p class="feature__text">
               Мы сделаем свою работу быстро! Два часа пролетят незаметно и вы — счастливый обладатель стильной стрижки-минутки!
             </p>
           </article>
-          <article class="advantages-item">
-            <h2 class="advantages-item__h2">круто</h2>
-            <div class="advantages-item__img"></div>
-            <p class="advantages-item__p">
-              Забудьте, как вы стриглись раньше.
-            </p>
-            <p class="advantages-item__p">Мы сделаем из вас звезду футбола или кино!
-            </p>
-            <p class="advantages-item__p">Во всяком случае внешне.
+          <article class="feature">
+            <h2 class="feature__title">круто</h2>
+            <p class="feature__text">
+              Забудьте, как вы стриглись раньше.<br>
+              Мы сделаем из вас звезду футбола или кино!Во всяком случае внешне.
             </p>
           </article>
-          <article class="advantages-item">
-            <h2 class="advantages-item__h2">дорого</h2>
-            <div class="advantages-item__img"></div>
-            <p class="advantages-item__p">
+          <article class="feature">
+            <h2 class="feature__title">дорого</h2>
+            <p class="feature__text">
               Наши мастера - профессионалы своего дела и не могут стоить дешево. К тому же, разве цена не дает определенный статус?
             </p>
           </article>
         </div>
-        
+
 <!--        Блок новости и фото-->
         <article class="block">
 <!--          Блок новостей-->
-          <section class="block-left block-news">
-            <h3 class="block-left__h3 block__h3">Новости</h3>
-            <article class="news">
-              <p class="news__p block__p">
-                Нам наконец завезли ягермайстер! Теперь вы можете пропустить стаканчик во время стижки
-              </p>
-              <time datetime="2017-01-11">11 января</time>
-            </article>
-            <article class="news">
-              <p class="news__p block__p">
-                В нашей команде пополнение, борис "бритва" стригунец, обладатель множества титулов и наград пополнил наши стройные ряды
-              </p>
-              <time datetime="2017-01-18">18 января</time>
-            </article>
-            <a class="news__btn button">все новости</a>
+          <section class="block__item">
+            <h3 class="block__title">Новости</h3>
+            <ul class="block__list">
+              <li class="block__list-item">
+                <article class="block__news news">
+                  <p class="news__text">
+                    Нам наконец завезли ягермайстер! Теперь вы можете пропустить стаканчик во время стижки
+                  </p>
+                  <time class="news__data" datetime="2017-01-11">11 января</time>
+                </article>
+              </li>
+              <li class="block__list-item"">
+                <article class="block__news news">
+                  <p class="news__text">
+                    В нашей команде пополнение, борис "бритва" стригунец, обладатель множества титулов и наград пополнил наши стройные ряды
+                  </p>
+                  <time class="news__data" datetime="2017-01-18">18 января</time>
+                </article>
+                <a class="button block_btn">все новости</a>
+              </li>
+            </ul>
           </section>
-          
+
 <!--          Блок фотогалереи-->
-          <section class="block-right photo">
-            <h3 class="block-right__h3 block__h3">Фотогалерея</h3>
-            <a class="photo__img" href="#"></a>
-            <div class="block-btn">
-              <a class="photo__btn button">назад</a>
-              <a class="photo__btn button">вперед</a>
+          <section class="block__item">
+            <h3 class="block__title">Фотогалерея</h3>
+            <a class="block__link" href="#">
+              <img class="block__img" src="#" alt="photo" width="" height="">
+            </a>
+            <div class="block__buttons">
+              <span class="block__btn button">назад</span>
+              <span class="block__btn button">вперед</span>
             </div>
           </section>
         </article>
 <!--        Конец блока новости и фото-->
-        
+
 <!--        Блок контакты и запись-->
         <article class="block">
 <!--          Блок контакты-->
-          <section class="block-left block-info">
-            <h3 class="block-left__h3 block__h3">Контактная информация</h3>
-            <div class="contacts">
-              <p class="contacts__name block__p">барбершоп "бородинский"</p>
-              <p class="contacts__address block__p">адрес: г. Санкт-Петербург, Б. Конюшенная, д. 19/8</p>
-              <p class="contacts__phone block__p">теефон: +7 (495) 666-02-66</p>
-            </div>
-            <div class="work-time">
-              <p class="work-time__p block__p">время работы:</p>
-              <p class="work-time__p block__p">>пн-пт: с 10:00 до 22:00</p>
-              <p class="work-time__p block__p">>сб-вс: с 10:00 до 19:00</p>
-            </div>
-            <div class="block-btn">
-              <a class="info__btn button">как проехать</a>
-              <a class="info__btn button">обратная связь</a>
+          <section class="block__item">
+            <h3 class="block__title">Контактная информация</h3>
+              <p class="block__address">
+                барбершоп "бородинский"<br>
+                адрес: г. Санкт-Петербург, Б. Конюшенная, д. 19/8<br>
+                телефон: +7 (495) 666-02-66
+              </p>
+              <p class="block__work-time">
+                время работы:<br>
+                пн-пт: с 10:00 до 22:00<br>
+                сб-вс: с 10:00 до 19:00
+              </p>
+            <div class="block__buttons">
+              <a class="block__btn button">как проехать</a>
+              <a class="block__btn button">обратная связь</a>
             </div>
           </section>
-          
+
 <!--          Блок запись-->
-          <section class="block-right">
-            <h3 class="block-right__h3 block__h3">Записаться</h3>
-            <p class="block-right__p block_p">укажите желаемую дату и время и мы свяжемся с вами для подтверждения брони</p>
-            
+          <section class="block__item">
+            <h3 class="block__title">Записаться</h3>
+            <p class="block__text">укажите желаемую дату и время и мы свяжемся с вами для подтверждения брони</p>
+
 <!--            Форма в блоке записи-->
-            <form class="appointment" method="post">
-              <div class="appointment-group">
-                <label for="date">Дата</label>
-                <input type="date" name="date" id="date" placeholder="08.10.2017">
+            <form class="block__form appointment" method="post">
+              <div class="appointment__group">
+                <label class="appointment__name" for="date">Дата</label>
+                <input class="input appointment__input" type="date" name="date" id="date" placeholder="08.10.2017">
               </div>
-              <div class="appointment-group">
-                <label for="time">Время</label>
-                <input type="time" name="time" id="time" placeholder="10:00">
+              <div class="appointment__group">
+                <label class="appointment__name" for="time">Время</label>
+                <input class="input appointment__input" type="time" name="time" id="time" placeholder="10:00">
               </div>
-              <div class="appointment-group">
-                <label for="name">Ваше имя</label>
-                <input type="text" name="name" id="name" placeholder="Борода">
+              <div class="appointment__group">
+                <label class="appointment__name" for="name">Ваше имя</label>
+                <input class="input appointment__input" type="text" name="name" id="name" placeholder="Борода">
               </div>
-              <div class="appointment-group">
-                <label for="phone">Телефон</label>
-                <input type="tel" name="phone" id="phone" placeholder="+7 123 456-78-90">
+              <div class="appointment__group">
+                <label class="appointment__name" for="phone">Телефон</label>
+                <input class="input appointment__input" type="tel" name="phone" id="phone" placeholder="+7 123 456-78-90">
               </div>
+              <input class="button appointment__btn" type="submit" value="отправить">
             </form>
-            
-            <a class="block-right-btn button">отправить</a>
           </section>
         </article>
       </div>
     </main>
-    
+
     <footer class="page-footer">
       <div class="container page-footer-container">
-        <div class="footer-contacts">
-          <p class="footer__p footer-contacts__name">барбершоп "бородинский"</p>
-          <p class="footer__p footer-contacts__address">адрес: г.санкт-петербург, ул.б.конюшенная, д. 19/8</p>
-          <a class="footer-contacts__map" href="#">как нас найти?</a>
-          <p class="footer__p footer-contacts__phone">телефон: +7 (495) 666-02-66</p>
-        </div>
+        <p class="footer-contacts">барбершоп "бородинский"<br>
+        адрес: г.санкт-петербург, ул.б.конюшенная, д. 19/8<br>
+        <a class="footer-contacts__map" href="#">как нас найти?</a><br>
+        телефон: +7 (495) 666-02-66</p>
         <div class="footer-social">
-          <p class="footer__p footer-social__text">давайте дружить!</p>
-          <div class="footer-social__btn-container">
-            <a class="footer-social__btn footer-social__vk button" href="#">
-              <div class="img"></div>
-              vk</a>
-            <a class="footer-social__btn footer-social__fb button" href="#">
-              <div class="img"></div>
-              facebook</a>
-            <a class="footer-social__btn footer-social__inst button" href="#">
-              <div class="img"></div>
-              instagram</a>
-          </div>
+          <p class="footer-social__text">давайте дружить!</p>
+          <ul class="footer-social__list social-list">
+            <li class="social-list__item">
+              <a class="footer-social__btn footer-social__vk button" href="#">
+                <div class="img"></div>
+                vk
+              </a>
+            </li>
+            <li class="social-list__item">
+              <a class="footer-social__btn footer-social__fb button" href="#">
+                <div class="img"></div>
+                facebook
+              </a>
+            </li>
+            <li class="social-list__item">
+              <a class="footer-social__btn footer-social__inst button" href="#">
+                <div class="img"></div>
+                instagram
+              </a>
+            </li>
+          </ul>
         </div>
-        <div class="footer-copyright">
-          <p class="footer__p footer-copyright__text">разработано:</p>
-          <a class="footer-copyright__address button" href="#">html academy</a>
+        <div class="copyright">
+          <p class="copyright__text">разработано:</p>
+          <a class="copyright__btn button" href="#">html academy</a>
         </div>
       </div>
     </footer>
+
+    <section class="popup popup-login">
+      <h2 class="popup__title">Личный кабинет</h2>
+      <p class="popup__text">Введите пожалуйста свой логин и пароль</p>
+      <form class="popup__form" method="get">
+        <input class="popup__input" type="text" placeholder="логин" name="login">
+        <input class="popup__input" type="password" placeholder="password" name="password">
+        <p class="popup__checkbox">
+          <input class="popup__input" type="checkbox" name="remember" id="remember" checked>
+          <label class="popup__name" for="remember">Запомните меня</label>
+        </p>
+        <input class="button popup__btn" type="submit" value="Войти">
+      </form>
+      <a class="popup__link" href="#">Я забыл пароль!</a>
+      <span class="popup__close">X</span>
+    </section>
+
+    <section class="popup popup__map">
+      <img src="#" alt="map" width="" height=" ">
+      <span class="popup__close">X</span>
+    </section>
   </body>
 </html>

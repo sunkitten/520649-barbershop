@@ -38,6 +38,10 @@ body {
 }
 /*Конец стилей кнопок*/
 
+.standart {
+  text-transform: none;
+}
+
 /*Стили шапки*/
 .main-menu {
   display: flex;
@@ -111,6 +115,13 @@ body {
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
+  padding-bottom: 28px;
+}
+
+.page-content {
+  background-image: url("#");
+  background-repeat: repeat;
+  background-color: #f9f5f3;
   padding-bottom: 28px;
 }
 
@@ -301,7 +312,7 @@ photo__btn {
 .footer-copyright__address:active {
   background-color: #ffffff;
   color: #000000;
-  font-weight: 800;  
+  font-weight: 800;
 }
 .footer-social__btn:hover .img,
 .footer-social__btn:active .img{
